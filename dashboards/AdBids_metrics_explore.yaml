@@ -8,3 +8,6 @@ metrics_view: AdBids_metrics
 
 dimensions: '*'
 measures: '*'
+
+defaults:
+  time_range: P6D
