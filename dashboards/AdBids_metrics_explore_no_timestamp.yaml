@@ -3,7 +3,7 @@
 
 type: explore
 
-title: "Adbids dashboard"
+title: "Adbids dashboard without timestamp"
 metrics_view: AdBids_metrics_no_timestamp
 
 dimensions: '*'
