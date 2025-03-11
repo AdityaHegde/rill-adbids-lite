@@ -11,3 +11,5 @@ measures: '*'
 
 defaults:
   time_range: P6D
+
+banner: "Ad bids banner dashboard"
