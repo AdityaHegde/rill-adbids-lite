@@ -2,8 +2,5 @@ compiler: rillv1
 
 title: "Untitled Rill Project"
 
-# These are example mock users to test your security policies.
-# Learn more: https://docs.rilldata.com/manage/security
-mock_users:
-- email: john@yourcompany.com
-- email: jane@partnercompany.com
+features:
+  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
