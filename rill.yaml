@@ -2,5 +2,5 @@ compiler: rillv1
 
 title: "Untitled Rill Project"
 
-features:
-  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
+#features:
+#  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
