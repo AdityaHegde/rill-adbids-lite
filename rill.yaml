@@ -2,5 +2,14 @@ compiler: rillv1
 
 title: "Untitled Rill Project"
 
-#features:
-#  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
+mock_users:
+- email: test@rilldata.com
+- email: aditya.hegde@rilldata.com
+  groups:
+  - group-test
+- email: adityahegde@gmail.com
+- email: test@yahoo.com
+- email: adityahegde@yahoo.com
+
+features:
+  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
