@@ -11,5 +11,5 @@ mock_users:
 - email: test@yahoo.com
 - email: adityahegde@yahoo.com
 
-features:
-  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
+#features:
+#  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
