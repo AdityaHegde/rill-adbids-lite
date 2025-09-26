@@ -12,5 +12,5 @@ mock_users:
 - email: adityahegde@yahoo.com
 
 features:
-- rillTime
-#  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
+- chat
+- dashboardChat
