@@ -1,0 +1,52 @@
+# Explore YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/canvas-dashboards
+
+type: canvas
+display_name: "Canvas Dashboard"
+defaults:
+  time_range: PT24H
+  comparison_mode: time
+rows:
+  - items:
+      - area_chart:
+          color:
+            field: publisher
+            type: nominal
+          metrics_view: AdBids_metrics
+          x:
+            field: timestamp
+            limit: 20
+            sort: -y
+            type: temporal
+          y:
+            field: total_records
+            type: quantitative
+            zeroBasedOrigin: true
+        width: 12
+    height: 40px
+  - items:
+      - area_chart:
+          color:
+            field: publisher
+            type: nominal
+          metrics_view: AdBids_metrics
+          x:
+            field: timestamp
+            limit: 20
+            sort: -y
+            type: temporal
+          y:
+            field: avg_price_sum
+            type: quantitative
+            zeroBasedOrigin: true
+        width: 12
+    height: 40px
+  - items:
+      - table:
+          metrics_view: AdBids_metrics
+          columns:
+            - publisher
+            - domain
+            - total_records
+            - avg_price_sum
+        width: 12
