@@ -3,8 +3,8 @@
 
 type: metrics_view 
 
-display_name: Model
-model: model
+display_name: AdBids model metrics
+model: AdBids_model
 timeseries: timestamp
 
 dimensions:
