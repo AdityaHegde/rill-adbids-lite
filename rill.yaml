@@ -14,3 +14,4 @@ mock_users:
 features:
 - chat
 - dashboardChat
+- stickyDashboardState
