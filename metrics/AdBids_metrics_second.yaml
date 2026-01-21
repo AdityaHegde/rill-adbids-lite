@@ -11,8 +11,8 @@ timeseries: timestamp
 dimensions:
   - label: Publisher
     column: publisher
-  - label: Domain
-    column: domain
+  - label: TLD
+    expression: array_to_string(string_split(domain, '.')[-2:], '.')
 
 measures:
   - name: total_records
