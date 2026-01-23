@@ -12,6 +12,4 @@ mock_users:
 - email: adityahegde@yahoo.com
 
 features:
-- chat
-- dashboardChat
-- stickyDashboardState
+  sticky_dashboard_state: true
