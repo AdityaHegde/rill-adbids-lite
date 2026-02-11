@@ -2,13 +2,16 @@
 # Reference documentation: https://docs.rilldata.com/reference/project-files/canvas-dashboards
 
 type: canvas
-display_name: "Canvas Dashboard"
+display_name: "Combined AdData Dashboard"
 defaults:
   time_range: PT24H
   comparison_mode: time
   filters:
     AdBids_metrics: (publisher IN ('Facebook'))
     AdData_model_metrics: (publisher IN ('Google'))
+filters:
+  pinned:
+    - publisher
 rows:
   - items:
       - leaderboard:
