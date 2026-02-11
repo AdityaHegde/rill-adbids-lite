@@ -1,0 +1,1 @@
+select b.*, i.* exclude(i.id) from AdBids b join AdImpressions i on b.id = i.id
