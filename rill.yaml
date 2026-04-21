@@ -14,3 +14,4 @@ mock_users:
 features:
   sticky_dashboard_state: true
   dashboard_chat: true
+  cloud_editing: true
