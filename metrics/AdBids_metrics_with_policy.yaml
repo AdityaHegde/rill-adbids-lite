@@ -29,4 +29,6 @@ measures:
     valid_percent_of_total: true
 
 security:
-  access: "'{{ .user.domain }}' = 'gmail.com' OR '{{ .user.domain }}' = 'rilldata.com'"
+  #access: "'{{ .user.domain }}' = 'gmail.com' OR '{{ .user.domain }}' = 'rilldata.com'"
+  access: true
+  row_filter: "publisher IN (SELECT publisher FROM mappings WHERE domain = '{{ .user.domain }}' )"
